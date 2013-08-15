@@ -9,7 +9,13 @@
 #import "TWSpringyFlowLayout.h"
 
 // Numerics
-CGFloat const kTWSpringyFlowLayoutDefaultBounce = 250.0f;
+CGFloat const kTWSpringyFlowLayoutDefaultBounce = 500.0f;
+
+@interface TWSpringyFlowLayout ()
+
+@property (nonatomic, assign) CGFloat bounceFactor;
+
+@end
 
 @implementation TWSpringyFlowLayout{
 	UIDynamicAnimator *_dynamicAnimator;
@@ -22,7 +28,7 @@ CGFloat const kTWSpringyFlowLayoutDefaultBounce = 250.0f;
 	self = [super init];
 	if (self)
 	{
-		// Nothing to do here
+		_bounceFactor = bounceFactor;
 	}
 	return self;
 }
@@ -78,7 +84,7 @@ CGFloat const kTWSpringyFlowLayoutDefaultBounce = 250.0f;
 	{
 		CGPoint anchorPoint = spring.anchorPoint;
 		CGFloat distanceFromTouch = fabsf(touchLocation.y - anchorPoint.y);
-		CGFloat scrollResistance = distanceFromTouch / 500; // higher the number, larger the bounce
+		CGFloat scrollResistance = distanceFromTouch / _bounceFactor; // higher the number, larger the bounce
 		
 		UICollectionViewLayoutAttributes *item = [spring.items firstObject];
 		CGPoint center = item.center;
