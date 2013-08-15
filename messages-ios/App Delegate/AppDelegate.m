@@ -16,7 +16,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = [[TWMessageViewController alloc] init];
+	UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:[[TWMessageViewController alloc] init]];
+    self.window.rootViewController = navController;
     [self.window makeKeyAndVisible];
     return YES;
 }

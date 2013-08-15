@@ -23,8 +23,6 @@ CGFloat const kTWMessageViewControllerCellHeight = 50;
 
 @interface TWMessageViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
-@property (nonatomic, strong) UICollectionView *collectionView;
-
 @end
 
 @implementation TWMessageViewController
@@ -46,13 +44,31 @@ CGFloat const kTWMessageViewControllerCellHeight = 50;
 - (void)loadView
 {
 	[super loadView];
-		
+	
+	self.navigationItem.title = @"Messages";
+	
+	// Background
+	UIImageView *backgroundImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"messages_bg_2.png"]];
+	backgroundImageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+	[self.view insertSubview:backgroundImageView belowSubview:self.collectionView];
+	
+	// Parallax effect
+	UIInterpolatingMotionEffect *interpolationHorizontal = [[UIInterpolatingMotionEffect alloc]initWithKeyPath:@"center.x" type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
+    interpolationHorizontal.minimumRelativeValue = @-20.0;
+    interpolationHorizontal.maximumRelativeValue = @20.0;
+	
+    UIInterpolatingMotionEffect *interpolationVertical = [[UIInterpolatingMotionEffect alloc]initWithKeyPath:@"center.y" type:UIInterpolatingMotionEffectTypeTiltAlongVerticalAxis];
+    interpolationVertical.minimumRelativeValue = @-20.0;
+    interpolationVertical.maximumRelativeValue = @20.0;
+	
+    [backgroundImageView addMotionEffect:interpolationHorizontal];
+    [backgroundImageView addMotionEffect:interpolationVertical];
+
 	// Configurte collection view
-	self.collectionView.backgroundColor = [UIColor whiteColor];
+	self.collectionView.backgroundColor = [UIColor clearColor];
 	[self.collectionView registerClass:[TWMessageViewCell class] forCellWithReuseIdentifier:kTWMessageViewControllerCellIdentifier];
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
-	[self.view addSubview:self.collectionView];
 }
 
 #pragma mark - UICollectionView DataSource & Delegate methods
@@ -70,7 +86,7 @@ CGFloat const kTWMessageViewControllerCellHeight = 50;
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     TWMessageViewCell *cell = (TWMessageViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:kTWMessageViewControllerCellIdentifier forIndexPath:indexPath];
-    cell.backgroundColor = indexPath.row % 2 == 0 ? [UIColor lightGrayColor] : [UIColor grayColor];
+    cell.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.5];
 	return cell;
 }
 

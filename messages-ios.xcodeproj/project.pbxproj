@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B13A9AA17BD5B2B00E6F1BA /* messages_bg_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B13A9A817BD5B2B00E6F1BA /* messages_bg_1.png */; };
+		9B13A9AB17BD5B2B00E6F1BA /* messages_bg_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B13A9A917BD5B2B00E6F1BA /* messages_bg_1@2x.png */; };
+		9B13A9AE17BD703E00E6F1BA /* messages_bg_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B13A9AC17BD703E00E6F1BA /* messages_bg_2.png */; };
+		9B13A9AF17BD703E00E6F1BA /* messages_bg_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B13A9AD17BD703E00E6F1BA /* messages_bg_2@2x.png */; };
 		9B4A59A517BD477600C142C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4A59A417BD477600C142C5 /* Foundation.framework */; };
 		9B4A59A717BD477600C142C5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4A59A617BD477600C142C5 /* CoreGraphics.framework */; };
 		9B4A59A917BD477600C142C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4A59A817BD477600C142C5 /* UIKit.framework */; };
@@ -20,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B13A9A817BD5B2B00E6F1BA /* messages_bg_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = messages_bg_1.png; sourceTree = "<group>"; };
+		9B13A9A917BD5B2B00E6F1BA /* messages_bg_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "messages_bg_1@2x.png"; sourceTree = "<group>"; };
+		9B13A9AC17BD703E00E6F1BA /* messages_bg_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = messages_bg_2.png; sourceTree = "<group>"; };
+		9B13A9AD17BD703E00E6F1BA /* messages_bg_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "messages_bg_2@2x.png"; sourceTree = "<group>"; };
 		9B4A59A117BD477600C142C5 /* messages-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "messages-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B4A59A417BD477600C142C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9B4A59A617BD477600C142C5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -54,6 +62,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B13A9A617BD5B2B00E6F1BA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9B13A9A717BD5B2B00E6F1BA /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9B13A9A717BD5B2B00E6F1BA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9B13A9A817BD5B2B00E6F1BA /* messages_bg_1.png */,
+				9B13A9A917BD5B2B00E6F1BA /* messages_bg_1@2x.png */,
+				9B13A9AC17BD703E00E6F1BA /* messages_bg_2.png */,
+				9B13A9AD17BD703E00E6F1BA /* messages_bg_2@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		9B4A599817BD477600C142C5 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +116,7 @@
 				9B4A59DF17BD48E500C142C5 /* Controllers */,
 				9B4A59E717BD49C600C142C5 /* Layouts */,
 				9B4A59EB17BD4A8D00C142C5 /* Views */,
+				9B13A9A617BD5B2B00E6F1BA /* Resources */,
 				9B4A59AB17BD477600C142C5 /* Supporting Files */,
 				9B4A59BF17BD477600C142C5 /* Images.xcassets */,
 			);
@@ -202,8 +230,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B13A9AA17BD5B2B00E6F1BA /* messages_bg_1.png in Resources */,
+				9B13A9AE17BD703E00E6F1BA /* messages_bg_2.png in Resources */,
 				9B4A59C017BD477600C142C5 /* Images.xcassets in Resources */,
 				9B4A59AF17BD477600C142C5 /* InfoPlist.strings in Resources */,
+				9B13A9AF17BD703E00E6F1BA /* messages_bg_2@2x.png in Resources */,
+				9B13A9AB17BD5B2B00E6F1BA /* messages_bg_1@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +383,7 @@
 				9B4A59D817BD477700C142C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

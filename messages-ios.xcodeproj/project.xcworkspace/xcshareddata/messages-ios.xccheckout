@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A047E386-FACB-42D7-A53B-60D17DF1D07D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>messages-ios</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AF46CD6D-9538-41E4-96BD-C1F2CED439C9</key>
+		<string>https://github.com/terryworona/messages-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>messages-ios.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AF46CD6D-9538-41E4-96BD-C1F2CED439C9</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/terryworona/messages-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AF46CD6D-9538-41E4-96BD-C1F2CED439C9</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AF46CD6D-9538-41E4-96BD-C1F2CED439C9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>messages-ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>
