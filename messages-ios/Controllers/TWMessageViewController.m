@@ -14,8 +14,12 @@
 // Views
 #import "TWMessageViewCell.h"
 
-// Strings (SPFeedViewController)
+// Strings
 NSString * const kTWMessageViewControllerCellIdentifier = @"kTWMessageViewControllerCellIdentifier";
+
+// Numerics
+CGFloat const kTWMessageViewControllerCellPadding = 10;
+CGFloat const kTWMessageViewControllerCellHeight = 50;
 
 @interface TWMessageViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
@@ -42,8 +46,9 @@ NSString * const kTWMessageViewControllerCellIdentifier = @"kTWMessageViewContro
 - (void)loadView
 {
 	[super loadView];
-	
+		
 	// Configurte collection view
+	self.collectionView.backgroundColor = [UIColor whiteColor];
 	[self.collectionView registerClass:[TWMessageViewCell class] forCellWithReuseIdentifier:kTWMessageViewControllerCellIdentifier];
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
@@ -59,19 +64,19 @@ NSString * const kTWMessageViewControllerCellIdentifier = @"kTWMessageViewContro
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 20;
+    return 100;
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     TWMessageViewCell *cell = (TWMessageViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:kTWMessageViewControllerCellIdentifier forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor redColor];
-    return cell;
+    cell.backgroundColor = indexPath.row % 2 == 0 ? [UIColor lightGrayColor] : [UIColor grayColor];
+	return cell;
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CGSizeMake(self.view.bounds.size.width, 50);
+    return CGSizeMake(self.view.bounds.size.width - (kTWMessageViewControllerCellPadding*2), kTWMessageViewControllerCellHeight);
 }
 
 @end

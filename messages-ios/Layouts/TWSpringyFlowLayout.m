@@ -8,9 +8,31 @@
 
 #import "TWSpringyFlowLayout.h"
 
+// Numerics
+CGFloat const kTWSpringyFlowLayoutDefaultBounce = 250.0f;
+
 @implementation TWSpringyFlowLayout{
 	UIDynamicAnimator *_dynamicAnimator;
 }
+
+#pragma mark - Alloc/Init
+
+- (id)initWithBounceFactor:(CGFloat)bounceFactor
+{
+	self = [super init];
+	if (self)
+	{
+		// Nothing to do here
+	}
+	return self;
+}
+
+- (id)init
+{
+	return [self initWithBounceFactor:kTWSpringyFlowLayoutDefaultBounce];
+}
+
+#pragma - Prepareness
 
 - (void)prepareLayout
 {
@@ -34,6 +56,8 @@
 	}
 }
 
+#pragma mark - Layout
+
 - (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect
 {
 	return [_dynamicAnimator itemsInRect:rect];
@@ -48,12 +72,17 @@
 {
 	UIScrollView *scrollView = self.collectionView;
 	CGFloat scrollDelta = newBounds.origin.y - scrollView.bounds.origin.y;
+	CGPoint touchLocation = [scrollView.panGestureRecognizer locationInView:scrollView];
 	
 	for (UIAttachmentBehavior *spring in _dynamicAnimator.behaviors)
 	{
+		CGPoint anchorPoint = spring.anchorPoint;
+		CGFloat distanceFromTouch = fabsf(touchLocation.y - anchorPoint.y);
+		CGFloat scrollResistance = distanceFromTouch / 500; // higher the number, larger the bounce
+		
 		UICollectionViewLayoutAttributes *item = [spring.items firstObject];
 		CGPoint center = item.center;
-		center.y += scrollDelta;
+		center.y += scrollDelta * scrollResistance;
 		item.center = center;
 		
 		[_dynamicAnimator updateItemUsingCurrentState:item];

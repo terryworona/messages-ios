@@ -10,4 +10,8 @@
 
 @interface TWSpringyFlowLayout : UICollectionViewFlowLayout
 
+// Higher the number, bigger the bounce.
+// 0 = no bounce, 1000 = lots of bounce
+- (id)initWithBounceFactor:(CGFloat)bounceFactor;
+
 @end
