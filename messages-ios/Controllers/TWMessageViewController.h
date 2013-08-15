@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TWMessageViewController : UIViewController
+@interface TWMessageViewController : UICollectionViewController
 
 @end

@@ -3,7 +3,7 @@
 //  CollectionView
 //
 //  Created by Terry Worona on 8/15/13.
-//
+//  Copyright (c) 2013 Terry Worona. All rights reserved.
 //
 
 #import "TWSpringyFlowLayout.h"
@@ -19,8 +19,7 @@
 	if (!_dynamicAnimator)
 	{
 		_dynamicAnimator = [[UIDynamicAnimator alloc] initWithCollectionViewLayout:self];
-	}
-	
+
 		CGSize contentSize = [self collectionViewContentSize];
 		NSArray *items = [super layoutAttributesForElementsInRect:CGRectMake(0, 0, contentSize.width, contentSize.height)];
 		
@@ -32,6 +31,7 @@
 			spring.frequency = 0.8;
 			[_dynamicAnimator addBehavior:spring];
 		}
+	}
 }
 
 - (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect

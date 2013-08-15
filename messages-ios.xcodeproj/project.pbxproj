@@ -21,6 +21,7 @@
 		9B4A59E217BD48E500C142C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4A59DE17BD48E500C142C5 /* AppDelegate.m */; };
 		9B4A59E617BD494F00C142C5 /* TWMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4A59E517BD494F00C142C5 /* TWMessageViewController.m */; };
 		9B4A59EA17BD49C600C142C5 /* TWSpringyFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4A59E917BD49C600C142C5 /* TWSpringyFlowLayout.m */; };
+		9B4A59EF17BD4A8D00C142C5 /* TWMessageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4A59EE17BD4A8D00C142C5 /* TWMessageViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		9B4A59E517BD494F00C142C5 /* TWMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWMessageViewController.m; sourceTree = "<group>"; };
 		9B4A59E817BD49C600C142C5 /* TWSpringyFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSpringyFlowLayout.h; sourceTree = "<group>"; };
 		9B4A59E917BD49C600C142C5 /* TWSpringyFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSpringyFlowLayout.m; sourceTree = "<group>"; };
+		9B4A59ED17BD4A8D00C142C5 /* TWMessageViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWMessageViewCell.h; sourceTree = "<group>"; };
+		9B4A59EE17BD4A8D00C142C5 /* TWMessageViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWMessageViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,7 @@
 				9B4A59DC17BD48E500C142C5 /* App Delegate */,
 				9B4A59DF17BD48E500C142C5 /* Controllers */,
 				9B4A59E717BD49C600C142C5 /* Layouts */,
+				9B4A59EB17BD4A8D00C142C5 /* Views */,
 				9B4A59AB17BD477600C142C5 /* Supporting Files */,
 				9B4A59BF17BD477600C142C5 /* Images.xcassets */,
 			);
@@ -176,6 +180,23 @@
 				9B4A59E917BD49C600C142C5 /* TWSpringyFlowLayout.m */,
 			);
 			path = Layouts;
+			sourceTree = "<group>";
+		};
+		9B4A59EB17BD4A8D00C142C5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9B4A59EC17BD4A8D00C142C5 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9B4A59EC17BD4A8D00C142C5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9B4A59ED17BD4A8D00C142C5 /* TWMessageViewCell.h */,
+				9B4A59EE17BD4A8D00C142C5 /* TWMessageViewCell.m */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +297,7 @@
 			files = (
 				9B4A59E217BD48E500C142C5 /* AppDelegate.m in Sources */,
 				9B4A59EA17BD49C600C142C5 /* TWSpringyFlowLayout.m in Sources */,
+				9B4A59EF17BD4A8D00C142C5 /* TWMessageViewCell.m in Sources */,
 				9B4A59B117BD477600C142C5 /* main.m in Sources */,
 				9B4A59E617BD494F00C142C5 /* TWMessageViewController.m in Sources */,
 			);
