@@ -1,4 +1,4 @@
 messages-ios
 ============
 
-Thrasher iOS Client
+Messages iOS Client
