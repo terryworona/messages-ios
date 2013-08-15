@@ -1,4 +1,7 @@
-messages-ios
+iOS 7 Message Client
 ============
 
-Messages iOS Client
+## Features
+
+- Bounce scroll effects via custom flow layout.
+- Parallax background (WIP).
