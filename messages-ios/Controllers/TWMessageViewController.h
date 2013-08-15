@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TWMessageViewController.h
 //  messages-ios
 //
 //  Created by Terry Worona on 8/15/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface TWMessageViewController : UIViewController
 
 @end

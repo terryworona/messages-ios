@@ -12,16 +12,15 @@
 		9B4A59A917BD477600C142C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4A59A817BD477600C142C5 /* UIKit.framework */; };
 		9B4A59AF17BD477600C142C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B4A59AD17BD477600C142C5 /* InfoPlist.strings */; };
 		9B4A59B117BD477600C142C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4A59B017BD477600C142C5 /* main.m */; };
-		9B4A59B517BD477600C142C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4A59B417BD477600C142C5 /* AppDelegate.m */; };
-		9B4A59B817BD477600C142C5 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B4A59B617BD477600C142C5 /* Main_iPhone.storyboard */; };
-		9B4A59BB17BD477600C142C5 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B4A59B917BD477600C142C5 /* Main_iPad.storyboard */; };
-		9B4A59BE17BD477600C142C5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4A59BD17BD477600C142C5 /* ViewController.m */; };
 		9B4A59C017BD477600C142C5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B4A59BF17BD477600C142C5 /* Images.xcassets */; };
 		9B4A59C717BD477700C142C5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4A59C617BD477700C142C5 /* XCTest.framework */; };
 		9B4A59C817BD477700C142C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4A59A417BD477600C142C5 /* Foundation.framework */; };
 		9B4A59C917BD477700C142C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4A59A817BD477600C142C5 /* UIKit.framework */; };
 		9B4A59D117BD477700C142C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B4A59CF17BD477700C142C5 /* InfoPlist.strings */; };
 		9B4A59D317BD477700C142C5 /* messages_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4A59D217BD477700C142C5 /* messages_iosTests.m */; };
+		9B4A59E217BD48E500C142C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4A59DE17BD48E500C142C5 /* AppDelegate.m */; };
+		9B4A59E617BD494F00C142C5 /* TWMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4A59E517BD494F00C142C5 /* TWMessageViewController.m */; };
+		9B4A59EA17BD49C600C142C5 /* TWSpringyFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4A59E917BD49C600C142C5 /* TWSpringyFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,18 +42,18 @@
 		9B4A59AE17BD477600C142C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9B4A59B017BD477600C142C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9B4A59B217BD477600C142C5 /* messages-ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "messages-ios-Prefix.pch"; sourceTree = "<group>"; };
-		9B4A59B317BD477600C142C5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		9B4A59B417BD477600C142C5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9B4A59B717BD477600C142C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		9B4A59BA17BD477600C142C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		9B4A59BC17BD477600C142C5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9B4A59BD17BD477600C142C5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9B4A59BF17BD477600C142C5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9B4A59C517BD477700C142C5 /* messages-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "messages-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B4A59C617BD477700C142C5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		9B4A59CE17BD477700C142C5 /* messages-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "messages-iosTests-Info.plist"; sourceTree = "<group>"; };
 		9B4A59D017BD477700C142C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9B4A59D217BD477700C142C5 /* messages_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = messages_iosTests.m; sourceTree = "<group>"; };
+		9B4A59DD17BD48E500C142C5 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9B4A59DE17BD48E500C142C5 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9B4A59E417BD494F00C142C5 /* TWMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWMessageViewController.h; sourceTree = "<group>"; };
+		9B4A59E517BD494F00C142C5 /* TWMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWMessageViewController.m; sourceTree = "<group>"; };
+		9B4A59E817BD49C600C142C5 /* TWSpringyFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSpringyFlowLayout.h; sourceTree = "<group>"; };
+		9B4A59E917BD49C600C142C5 /* TWSpringyFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSpringyFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,14 +113,11 @@
 		9B4A59AA17BD477600C142C5 /* messages-ios */ = {
 			isa = PBXGroup;
 			children = (
-				9B4A59B317BD477600C142C5 /* AppDelegate.h */,
-				9B4A59B417BD477600C142C5 /* AppDelegate.m */,
-				9B4A59B617BD477600C142C5 /* Main_iPhone.storyboard */,
-				9B4A59B917BD477600C142C5 /* Main_iPad.storyboard */,
-				9B4A59BC17BD477600C142C5 /* ViewController.h */,
-				9B4A59BD17BD477600C142C5 /* ViewController.m */,
-				9B4A59BF17BD477600C142C5 /* Images.xcassets */,
+				9B4A59DC17BD48E500C142C5 /* App Delegate */,
+				9B4A59DF17BD48E500C142C5 /* Controllers */,
+				9B4A59E717BD49C600C142C5 /* Layouts */,
 				9B4A59AB17BD477600C142C5 /* Supporting Files */,
+				9B4A59BF17BD477600C142C5 /* Images.xcassets */,
 			);
 			path = "messages-ios";
 			sourceTree = "<group>";
@@ -153,6 +149,33 @@
 				9B4A59CF17BD477700C142C5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9B4A59DC17BD48E500C142C5 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				9B4A59DD17BD48E500C142C5 /* AppDelegate.h */,
+				9B4A59DE17BD48E500C142C5 /* AppDelegate.m */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		9B4A59DF17BD48E500C142C5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9B4A59E417BD494F00C142C5 /* TWMessageViewController.h */,
+				9B4A59E517BD494F00C142C5 /* TWMessageViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9B4A59E717BD49C600C142C5 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				9B4A59E817BD49C600C142C5 /* TWSpringyFlowLayout.h */,
+				9B4A59E917BD49C600C142C5 /* TWSpringyFlowLayout.m */,
+			);
+			path = Layouts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B4A59BB17BD477600C142C5 /* Main_iPad.storyboard in Resources */,
 				9B4A59C017BD477600C142C5 /* Images.xcassets in Resources */,
-				9B4A59B817BD477600C142C5 /* Main_iPhone.storyboard in Resources */,
 				9B4A59AF17BD477600C142C5 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,9 +274,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B4A59BE17BD477600C142C5 /* ViewController.m in Sources */,
-				9B4A59B517BD477600C142C5 /* AppDelegate.m in Sources */,
+				9B4A59E217BD48E500C142C5 /* AppDelegate.m in Sources */,
+				9B4A59EA17BD49C600C142C5 /* TWSpringyFlowLayout.m in Sources */,
 				9B4A59B117BD477600C142C5 /* main.m in Sources */,
+				9B4A59E617BD494F00C142C5 /* TWMessageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,22 +306,6 @@
 				9B4A59AE17BD477600C142C5 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		9B4A59B617BD477600C142C5 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9B4A59B717BD477600C142C5 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		9B4A59B917BD477600C142C5 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9B4A59BA17BD477600C142C5 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		9B4A59CF17BD477700C142C5 /* InfoPlist.strings */ = {
