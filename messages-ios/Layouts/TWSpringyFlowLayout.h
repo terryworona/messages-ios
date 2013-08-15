@@ -11,7 +11,7 @@
 @interface TWSpringyFlowLayout : UICollectionViewFlowLayout
 
 // Lower the number, bigger the bounce.
-// 0 = insance bounce bounce, 1000 = minimum bounce
+// 0 = crazy bounce bounce, 1000 = minimum bounce
 - (id)initWithBounceFactor:(CGFloat)bounceFactor;
 
 @end
